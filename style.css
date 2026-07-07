@@ -1,8 +1,14 @@
 /* Reset Style */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
+  color: #181818;
+  line-height: 1.6;
 }
 img {
   max-width: 100%;
@@ -22,7 +28,15 @@ header {
   color: white;
   border: none;
   cursor: pointer;
+  transition: 0.3s ease;
 }
+.common-btn:hover {
+  background: #e65c00;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid black;
+}
+
 .outline-btn {
   background-color: white;
   padding: 6px 16px;
@@ -33,12 +47,18 @@ header {
   border: 2px solid black;
   cursor: pointer;
   margin-top: 10px;
+  transition: 0.3s ease;
+  border: 2px solid black;
+}
+.outline-btn:hover {
+  background: #fd6e0a;
+  color: white;
+  border-color: #fd6e0a;
 }
 
 .container {
-  width: 100%;
+  width: min(90%, 1200px);
   margin: auto;
-  max-width: 1200px;
 }
 
 /* navigation section */
@@ -46,6 +66,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
+  align-items: center;
 }
 
 ul {
@@ -57,9 +78,17 @@ ul {
 }
 
 ul li a {
+  color: #474747;
+  font-weight: 600;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
+ul li a:hover {
+  color: #fd6e0a;
+}
 .logo {
   font-weight: bold;
   font-size: 32px;
@@ -92,7 +121,9 @@ ul li a {
 }
 
 .hero-left-btn-parent {
-  margin: 12px;
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
 }
 
 /* About section  */
@@ -165,7 +196,7 @@ h2 {
   padding: 20px;
 }
 
-.summary-parent h2{
+.summary-parent h2 {
   font-size: 1.8rem;
 }
 .summary-content-parent {
@@ -180,10 +211,9 @@ h2 {
   margin: 20px 5px;
 }
 
-.summary-content-edex h2{
+.summary-content-edex h2 {
   font-size: 1.5rem;
 }
-
 
 .summary {
   text-align: left;
@@ -191,19 +221,19 @@ h2 {
   padding: 20px;
 }
 
-.summary h2, h3, p{
+.summary h2,
+h3,
+p {
   margin: 10px 0;
-
 }
 
-.download-cv-btn{
+.download-cv-btn {
   font-size: 1.5rem;
   margin-bottom: 20px;
   height: 64px;
   width: 200px;
   border: 2px solid black;
 }
-
 
 /* my amazing sectuon  */
 .my-amazing-parent {
